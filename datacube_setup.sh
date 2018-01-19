@@ -47,7 +47,7 @@ conda update --all
 
 conda create -n harshuenv python=$PYTHON_VERSION
 
-conda env update -n harshuenv --file environment.yaml
+conda env update -n harshuenv --file ./environment.yaml
 
 conda clean --all --yes
 
