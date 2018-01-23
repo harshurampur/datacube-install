@@ -22,3 +22,4 @@ dependencies:
 - boto3 = 1.4.3
 - cython # used by netcdf4 at compile only, but needed for compliance checker to load plugins
 - pypeg2
+- ruamel.yaml 
