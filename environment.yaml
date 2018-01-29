@@ -1,4 +1,4 @@
-name: harshuenv
+name: datacubenv
 channels:
 - conda-forge/label/dev
 - conda-forge
