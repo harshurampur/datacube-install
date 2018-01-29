@@ -9,7 +9,7 @@ EOF
 )
 
 POST_BASH_VARS=$(cat <<EOF
-source activate harshuenv
+source activate datacubenv
 cd $HOME
 EOF
 )
@@ -45,13 +45,13 @@ conda config --set always_yes yes --set changeps1 yes
 conda config --prepend channels conda-forge
 conda update --all
 
-conda create -n harshuenv python=$PYTHON_VERSION
+conda create -n datacubenv python=$PYTHON_VERSION
 
-conda env update -n harshuenv --file ./environment.yaml
+conda env update -n datacubenv --file $HOME/datacube-install/environment.yaml
 
 conda clean --all --yes
 
-source activate harshuenv
+source activate datacubenv
 
 pip install . --no-deps --upgrade
 
